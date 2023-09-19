@@ -42,8 +42,80 @@ button[type="reset"] {
     color: #2c3e50;
 }
 
-/**************Formulaire**************/
-label {
-    display: block;
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #2c3e50;
+    font-size: 3rem;
 }
 
+/**************Formulaire**************/
+form {
+    padding: 20px;
+    margin: 2em auto 80px;
+    max-width: 450px;
+    background-color: white;
+    border: 6px solid #2c3e50;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form ul li {
+    margin-bottom: 1.5em;
+}
+
+form ul li {
+    margin-bottom: 1.5em;
+}
+
+form ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+form input, select {
+    border: 2px solid #2c3e50;
+    padding: 0.5em;
+    width: 100%;
+    /*forcer héritage des police*/
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+fieldset {
+    border: 2px solid #2c3e50;
+    padding: 0 1em;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 .25em;
+}
+
+label input {
+    width: auto;
+}
+
+label input + span {
+    font-weight: normal;
+}
+
+label input:checked + span {
+    font-weight: bold;
+}
+
+fieldset label {
+    padding: 1em 0;
+    margin: 0;
+}
